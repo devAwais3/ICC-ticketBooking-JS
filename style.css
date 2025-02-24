@@ -1,10 +1,9 @@
-body {
-    overflow-y: hidden;
-}
-
 .container-fluid {
     background: url('images/bg-img.avif') no-repeat center center / cover;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -25,6 +24,7 @@ body {
     position: relative;
     z-index: 1;
     color: white;
+    text-align: center;
 }
 
 .trophyIcon {
@@ -47,6 +47,7 @@ body {
 .hero-para {
     font-size: 1.2rem;
     color: #bcc0c0;
+    margin-bottom: 10px;
 }
 
 .icons {
@@ -69,9 +70,9 @@ button {
     color: white;
     font-size: 1.1rem;
     font-weight: bold;
-    /* margin: 6px; */
     background: linear-gradient(to right, #00c851, #007bff);
     transition: 0.4s;
+    margin-top: 10px;
 }
 
 button i {
@@ -94,6 +95,8 @@ button:hover {
     font-size: 2.5rem;
     font-weight: bolder;
     color: #58B77D;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .info p {
