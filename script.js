@@ -1,7 +1,7 @@
 function ticketSystem(){
     let fullName=prompt("Enter your full name : ");
-    if(!fullName){
-        alert("\u274C Ticket Purchase Denied due to invalid name input!" + "\nFull Name is Required.");
+    if(!fullName || !/^[a-zA-Z]+$/.test(fullName)){
+        alert("\u274C Ticket Purchase Denied due to invalid name input!");
         return;
     }
     let amount=Number(prompt("Enter amount : "));
